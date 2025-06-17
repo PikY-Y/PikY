@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title> 
+	<script type="text/javascript">//定义一个函数，用来更新时钟，并将其命名为 "clockon"
+	function clockon(){
+	var now=new Date();// 创建一个 Date 对象，保存当前时间
+	var year=now.getFullYear(); // 从 Date 对象中获取当前年份
+	var month=now.getMonth();// 从 Date 对象中获取当前月份
+	var date=now.getDate();// 从 Date 对象中获取当前日期
+	var day=now.getDay();// 从 Date 对象中获取当前星期几，返回值为 0-6，0代表星期日
+	var week;
+	month=month+1;// 将月份值加上1，因为返回值为0-11
+	             // 创建了一个星期几的数组，并将数组值赋给 week 变量
+	var arr_week=new Array ("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+	week=arr_week[day]; // 拼接当前时间，并保存在 time 变量中
+	time=year+"年"+month+"月"+date+"日"+week; // 创建文本节点，保存时间值，并将其添加到 id 为 "clock" 的元素中
+	var textTime=document.createTextNode(time);
+	document.getElementById("clock").appendChild(textTime);// 等页面完全加载后，执行 clockon 函数来初始化时钟
+}
+window.onload=clockon;
+	</script> 
+<link href="CSS/GY.css" type="text/css" rel="stylesheet"/>
+<style>
+section {
+    width: 98%;
+    height: 900px;/* 设置文档中所有 section 内容区块元素的宽度为 98%，高度为 900px */
+}
+	
+	
+video, .text {
+    width: 50%;/* 设置文档中所有 video 元素和 class 为 text 的元素的宽度为 50% */
+    padding: 10px; /* 设置内边距为 10px，此处指上、右、下、左均为 10px */
+    box-sizing: border-box;/* 设置盒模型为 border-box，即盒模型的宽高计算包括元素的内边距和边框 */
+}
+	
+.dy {/*中间部分的样式*/
+    margin: 0 auto; /* 水平居中 */
+    width: 800px; /* 宽度为 800px */
+    color:#FFAA1C;
+}
+
+#mc {/*蜜虫字体样式*/
+    font-size: 25px; /* 字体大小为 25px */
+}
+	
+.rq {
+    color: #FFAA1C;
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 底部对齐 */
+    text-align: center; /* 水平居中 */
+    font-size: 17px; /* 字体大小为 17px */
+}
+</style>
+</head>
+
+<body>
+	<header><!-- 表示页面中一个内容区域或整个页面的标题-->
+	<div class="ys">
+		<div>
+			<img src="images/回春丹乐队.png" width="260px" height="80px"/>
+		</div>
+		<div class="d">
+			<a href="回春丹.html">主页</a></a>&nbsp;&nbsp;&nbsp;介绍&nbsp;&nbsp;&nbsp;<a href="https://music.163.com/?from=itab#/artist?id=27730224">歌手</a>&nbsp;&nbsp;&nbsp;<a href="https://music.163.com">网易云</a>&nbsp;&nbsp;&nbsp;<a href="https://music.163.com/?from=itab#/artist/album?id=27730224">歌曲</a>
+		</div>
+		</div>
+	</div>
+	</header>
+	<section>
+		<div class="dy">
+			<h2 id="mc">专辑《蜜虫》</h2>
+			<div>
+				<img src="images/蜜虫.jpg" width="250px" height="250px" align="left"/>
+				<p style="text-indent:2em;">如果你事先点击过搜索框，就会发现“蜜虫”并不是什么高深晦涩的词。
+它不过是白菜、甘蓝、甜椒等蔬菜上常见的小害虫，在渺小且短暂的一生里，菜根到菜叶就是它世界的全部。倒霉的，兴许还没来得及“坏菜”，便被天敌夺了性命。不过我们并没有取其生物学上的界定，而是在其文字表面上，稍作联想。在接下来的五首歌里，“蜜虫”特指——甜蜜的网虫，即那些沉溺互联网世界“虚拟”情感的“迷糊虫”，当然这里的描述其实斟酌了好久。因为那些情感发端许是真诚炽烈的，只不过呈现出来却是一串代码，所以“虚拟”比“虚假”来得贴切。又因为代码本没有情感，嘴角的笑或泪不过是它激起的脑神经电流，所以“迷糊虫”比“可怜虫”来得委婉。它们能证明什么，而我们，又能证明什么？</p>
+			<br/><br/><br/><br/>
+			<div style="display: flex;"><!--转化为弹性盒子-->
+		<video src="MP4/丘丘.mp4" controls width="400px"></video>
+		<div class="text">
+			<h2>单曲《丘丘》</h2>
+			<p style="text-indent:2em;">这首歌或者说这连发的两部专辑明明可以延续耳鬼出风和艾蜜莉的热度的，可是就在汽水上首发后推迟那么久才发，有种赔了夫人又折兵的感觉，很多人也看出来了两部专辑都有着提升，可是要不是我朋友给我分享新专辑的《断气》不然我还一直停留在《梦特别矫》的那个时期，我个人感觉还是非常不值得的。</p >
+		</div>
+	</div>
+				<br/><br/>
+				<div style="display: flex;"><!--转化为弹性盒子-->
+		<video src="MP4/相思病.mp4" controls width="400px"></video>
+		<div class="text">
+			<h2>单曲《相思病》</h2>
+			<p style="text-indent:2em;">等待会让人等待会让我的让我的灵魂锈迹斑斑，让我的灵魂锈迹斑斑，年轻的蚂蚁好不容易闯闯进去，闯进相思病里去。张开了双手我以为我将拥有全世界的朋友回头再一看如画的冰冷如此的冰冷，就这个城市没有任何角落庇护我们健康成长不要奔着相思病死去相思病死去。</p >
+		</div>
+	</div>
+			</div>
+		</div>
+		
+	</section>
+	<footer>
+		<div class="jw">
+				<img src="images/回春丹乐队.png" width="260px" height="80px"/>
+				<div  class="rq" id="clock">当前日期：</div>
+			</div>
+	</footer>
+</body>
+</html>
