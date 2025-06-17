@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>回春丹</title>
 		<link href="CSS/GY.css" type="text/css" rel="stylesheet"/>
 	<style>
@@ -10,16 +11,20 @@
 			}
 		.dy{
 			margin: 0 auto;
-			width: 700px;
+			width: 90%;
+			max-width: 700px;
 			color: #FFAA1C;
 		}
 		
 		.jj{
 			display: flex;/* 将对象作为弹性伸缩盒显示 */
+			flex-wrap: wrap;
 			color: #857B62;
 			text-align: center;
 			font-size:25px;
-			width: 700px;
+			width: 90%;
+			max-width: 700px;
+			justify-content: center;
 		}
 		
 		.zjd{
@@ -28,17 +33,79 @@
 			display: flex;
 		}
 		
-		.zjz{width: 700px;}
-		.zjx{float: left;
-			margin:0px 30px 0px 0px;}
+		.zjz{
+			width: 100%;
+			max-width: 700px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.zjx{
+			float: none;
+			margin:15px;
+			width: 100%;
+			max-width: 213px;
+		}
 		.w1{
-	width: 213px;
-	color: #FFAA1C;
+			width: 100%;
+			max-width: 213px;
+			color: #FFAA1C;
 		}
 		
 		.zhy{
 			float: right;
 			margin:0px 30px 0px 0px;
+		}
+		
+		.ys {
+			padding: 10px;
+		}
+		
+		.ys .d {
+			margin-top: 10px;
+			font-size: 16px;
+			word-break: keep-all;
+			white-space: nowrap;
+			overflow-x: auto;
+		}
+		
+		.ys img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.jw img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		/* 手机端样式 */
+		@media screen and (max-width: 600px) {
+			#hcd {
+				font-size: 20px;
+			}
+			
+			.dy p {
+				font-size: 16px;
+			}
+			
+			.jj {
+				font-size: 18px;
+			}
+			
+			.ys .d {
+				font-size: 14px;
+			}
+			
+			.zjx {
+				margin: 10px 0;
+			}
+			
+			img[align="left"] {
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	</style>	
 	</head>
@@ -65,14 +132,14 @@
 			<br/>
 			<p>《巨星》 发行时间：2020.04.12</p>
 			<p>在一颗五彩斑斓的黑色星球里，妖风很大。</p>
-			<p>一家之主们见面时，均以“巨星”相称，承载着无尽的尊敬和祝福。</p>
+			<p>一家之主们见面时，均以"巨星"相称，承载着无尽的尊敬和祝福。</p>
 			<p>那里早已没有了公主的踪影，因为没有人想和她们纠缠不清。</p>
 			<br/>
 			<p>《梦特别娇》 发行时间：2021.01.22</p>
 			<p>现实就像是住在万花筒里的梦，一次次推落你，流泪，或者爬起来。或者坐在车厢里望向窗外，夜色如常。</p>
 			<br/>
 			<p>《初恋》 发行时间：2021.08.29</p>
-			<p>这里有一本奇妙的记事簿，名为“恋恋”。“恋”字拆开是亦心，即亦如初心，一如既往。“恋”是对过往美好时光的浪漫告白，是可以跨越岁月却永不磨灭的青春记忆。翻开它，那些经典之声会带给你历久弥新的感动。</p>
+			<p>这里有一本奇妙的记事簿，名为"恋恋"。"恋"字拆开是亦心，即亦如初心，一如既往。"恋"是对过往美好时光的浪漫告白，是可以跨越岁月却永不磨灭的青春记忆。翻开它，那些经典之声会带给你历久弥新的感动。</p>
 			<br/>
 			</div>
 		</div>
@@ -83,23 +150,23 @@
 				<img src="images/初恋.jpg" width="213" height="213"/>
 					<div class="w1">
 						<p style="text-align: center">《初恋》</p>
-					  <p style="text-align: center">这里有一本奇妙的记事簿，名为“恋恋”。“恋”字拆开是亦心，即亦如初心，一如既往。“恋”是对过往美好时光的浪漫告白，是可以跨越岁月却永不磨灭的青春记忆。</p>
+					  <p style="text-align: center">这里有一本奇妙的记事簿，名为"恋恋"。"恋"字拆开是亦心，即亦如初心，一如既往。"恋"是对过往美好时光的浪漫告白，是可以跨越岁月却永不磨灭的青春记忆。</p>
 					</div>
 				</div>
 				<div class="zjx">
 				<a href="回春丹子页.html"><img src="images/蜜虫.jpg" width="213" height="213"/></a>
 					<div class="w1">
 					  <p style="text-align: center">《蜜虫》</p>
-					  <p style="text-align: center">在接下来的五首歌里，“蜜虫”特指--甜蜜的网虫，即那些沉溺互联网世界“虚拟”情感的“迷糊虫”,当然这里的描述其实甚酌了好久。</p>
+					  <p style="text-align: center">在接下来的五首歌里，"蜜虫"特指--甜蜜的网虫，即那些沉溺互联网世界"虚拟"情感的"迷糊虫",当然这里的描述其实甚酌了好久。</p>
                     </div>
 			     </div>
-					<div>
+					<div class="zjx">
 						<img src="images/梦特别娇.jpg" width="213" height="213"/>
-						<p style="text-align: center; color: #D4AA1C;" "color: ">《梦特别娇》</p>
+						<p style="text-align: center; color: #D4AA1C;">《梦特别娇》</p>
 							<p style="text-align: center; color: #DFAA1C;">现实就像是住在万花筒里的梦，一次次推落你，流泪，或者爬起来。或者坐在车厢里望向窗外，夜色如常。</p>
 					</div>
 			</div>
-		</div>>
+		</div>
 		<footer>
 			<div class="jw">
 				<img src="images/回春丹乐队.png" width="260px" height="80px"/>
